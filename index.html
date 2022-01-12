@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Irelands Counties</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Can you name all of Ireland's counties?</h1>
+  </header>
+  <div class="backdrop"></div>
+  <div class="modal" id="add-modal">
+    <div class="modal-content">
+      <div class="div-h2">
+        <h2 class="modal-h2">Hard luck, you gave up.</h2>
+        <h2 class="modal-h2">Hit 'yes' if you want to try again.</h2>
+      </div>
+      <img src="leprechaun-cardboard-stand-up_13677268.jpg" alt="Ireland-mascot">
+      <div class="button-div">
+        <button class="yes-btn">Yes</button>
+        <button class="no-btn">No</button>
+      </div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="input-div">
+      <input type="text" placeholder="Guess an Irish county" id="county-name" onfocus="this.value=''">
+      <button id="county-btn">Add</button>
+    </div>
+    <div id="div-root"></div>
+  </div>
+  <div class="reveal-box">
+    <h3 id="counter"></h3>
+    <p class="reveal">Give up? Click here to reveal!</p>
+  </div>
+  <ul id="list-root"></ul>
+  <ul id="missing-li-root"></ul>
+</body>
+
+</html>
